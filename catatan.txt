@@ -76,21 +76,21 @@ file job dll.
  - paket_sumsum_tulang // sudah
  - paket_sumsum_tulang_detail // sudah
  - parameter_grub
- - pasien
+ - pasien // sudah 
  - password_resets
  - personal_access_tokens
- - petugas_lab
- - posisi_tray
- - printer
- - printer_detail
- - qc_histories
- - qc_history
- - qc_setup
- - qc_setup_detail
- - qc_transaksi
- - qc_transaksi_detail
- - report_hasil
- - report_kritis
+ - petugas_lab // sudah
+ - posisi_tray // sudah
+ - printer // sudah
+ - printer_detail // sudah
+ - qc_histories // yang lama belum ada
+ - qc_history // yang lama belum ada
+ - qc_setup // yang lama belum ada
+ - qc_setup_detail // yang lama belum ada
+ - qc_transaksi // yang lama belum ada
+ - qc_transaksi_detail // yang lama belum ada
+ - report_hasil // yang lama belum ada
+ - report_kritis // yang lama kosong
  - ruangan
  - saran
  - sessions
