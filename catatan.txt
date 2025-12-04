@@ -9,142 +9,145 @@ config
 uruan laraval jgn.
 file job dll.
 
-yang sudah 
 
-📌 Daftar tabel di TARGET (db_slims_rsdkt_aio):
- - alias_kode_lab // memang kosong
- - analis // di lama emang tidak ada
- - antibiotik // sudah
- - asal_rujukan // di lama emang tidak ada
- - bakteri // sudah
- - bakteri_detail // di lama emang tidak ada
- - barang_keluar // di lama emang tidak ada
- - barang_keluar_detail // di lama emang tidak ada
- - barang_masuk // di lama emang tidak ada
- - barangs // di lama emang tidak ada
- - cara_masuk // di lama emang tidak ada
- - cekin_sample // di lama emang tidak ada
- - config // sudah. 
- - dokter // sudah
- - dokter_pj // sudah
+### Kategori 1: Sudah (Sudah di Migrasi, Data Penuh/Ada di Kedua Sistem)
+=====================================================================================
+antibiotik					        sudah
+bakteri						        sudah
+config						        sudah
+dokter						        sudah
+dokter_pj					        sudah
+history						        sudah
+instalasi					        sudah
+jenis_pemeriksaan			        sudah
+kategori_catatan			        sudah
+paket_antibiotik			        sudah
+paket_antibiotik_detail		        sudah
+paket_lab					        sudah
+paket_lab_detail			        sudah
+paket_sumsum_tulang			        sudah
+paket_sumsum_tulang_detail	        sudah
+pasien						        sudah
+petugas_lab					        sudah
+posisi_tray					        sudah
+printer						        sudah
+printer_detail				        sudah
+ruangan						        sudah
+sessions					        sudah
+setting						        sudah
+specimen					        sudah
+status_asuransi				        sudah
+status_cito					        sudah
+tat					    	        sudah
+users						        sudah + nambahin isi permission
+waktu_pemeriksaan			        sudah
+konten_catatan				        sudah
+duplo						        sudah
+duplo_ori					        sudah
+grub_detail					        sudah
+kode_lab_hasil				        sudah
+grub						        sudah + insert default autoloader = 0
 
- - harga_kultur // lama kosong
- - history // sudah
- - instalasi // sudah
- - jenis_pemeriksaan // sudah
- - jobs // di lama tidak ada
- - kalkulasi // dilama tidak ada
- - kategori // di lama kosong
+### Kategori 2: Kosong (Sudah di Migrasi, tetapi data di Sistem Lama Kosong)
+=====================================================================================
+alias_kode_lab					    lama kosong
+harga_kultur					    lama kosong
+jobs						        lama kosong
+kategori					        lama kosong
+kelas_pasien					    lama kosong
+ket_klinis					        lama kosong
+member						        lama kosong
+migrations					        lama kosong
+order_alat_kimia				    lama kosong
+order_simrs					        lama kosong
+report_kritis					    lama kosong
+status_kirim_simrs				    lama kosong
+sub_kategori					    lama kosong
+kultur						        lama kosong
+lab_kultur_antibiotik		        lama kosong
+lab_kultur_bakteri				    lama kosong
+lampiran					        lama kosong
+titel_sumsum_tulang				    lama kosong
+transaksi_covid					    lama kosong
+transaksi_kultur				    lama kosong
+transaksi_kultur_darah				lama kosong
+transaksi_kultur_pus				lama kosong
+transaksi_kultur_sperma				lama kosong
+transaksi_lab_antibiotik			lama kosong
+transaksi_lab_deskripsi				lama kosong
+transaksi_lab_detail				lama kosong
+transaksi_lab_gdt				    lama kosong
+transaksi_lab_klinis				lama kosong
+transaksi_lab_kultur				lama kosong
+transaksi_lab_mb				    lama kosong
+transaksi_lab_mb_antibiotik			lama kosong
+transaksi_lab_mb_detail				lama kosong
+transaksi_lab_mb_mikroorganisme		lama kosong
+transaksi_lab_sumsum_tulang1		lama kosong
+transaksi_lab_sumsum_tulang2		lama kosong
+transaksi_lab_sumsum_tulang3		lama kosong
+waktu_sift					        lama kosong
+failed_jobs					        lama kosong
+password_resets					    lama kosong
+personal_access_tokens				lama kosong
 
- - kategori_catatan // sudah
- - kelas_pasien / yang lama kosong
- - kesan // yng lama belum ada tabel nya
- - ket_klinis // yng lama kosong
- - kirim_simrs // yng lama blm ada tabel nya
+### Kategori 3: Tidak Ada (Tabel Baru, Tidak Ada di Sistem Lama)
+=====================================================================================
+bakteri_detail					    lama belum ada tabelnya
+barang_keluar					    lama belum ada tabelnya
+barang_keluar_detail			    lama belum ada tabelnya
+barang_masuk					    lama belum ada tabelnya
+barangs						        lama belum ada tabelnya
+cara_masuk					        lama belum ada tabelnya
+cekin_sample					    lama belum ada tabelnya
+kesan						        lama belum ada tabelnya
+kirim_simrs					        lama belum ada tabelnya
+media_pemeriksaan				    lama belum ada tabelnya
+mikroorganisme					    lama belum ada tabelnya
+asal_rujukan					    lama belum ada tabelnya
+spesimen_snomed					    lama belum ada tabelnya
+analis						        lama belum ada tabelnya
+parameter_grub					    lama belum ada tabelnya
+kode_lab_panel					    lama belum ada tabelnya
+duplo_qc					        lama belum ada tabelnya
+duplo_qc_detail				        lama belum ada tabelnya
+duplo_img					        lama belum ada tabelnya
+duplo_mikrobiologi			        lama belum ada tabelnya
+duplo_mikrobiologi_detail	        lama belum ada tabelnya
+kode_lab_panel_detail			    lama belum ada tabelnya
+transaksi_sampel				    lama belum ada tabelnya
+transaksi_stok					    lama belum ada tabelnya
+temp_simrs					        lama belum ada tabelnya
+qc_histories					    lama belum ada tabelnya
+qc_history					        lama belum ada tabelnya
+qc_setup					        lama belum ada tabelnya
+qc_setup_detail					    lama belum ada tabelnya
+qc_transaksi					    lama belum ada tabelnya
+qc_transaksi_detail				    lama belum ada tabelnya
+report_hasil					    lama belum ada tabelnya
+kalkulasi					        lama belum ada tabelnya
+saran						        lama belum ada tabelnya
 
- - kultur // di lama kosong
- - lab_kultur_antibiotik // di lama kosong
- - lab_kultur_bakteri // di lama kosong
- - lampiran // di lama kosong
- - media_pemeriksaan // di alma blm ada tabel nya
- - member // di lama kosong
- - migrations // di alma kosong
- - mikroorganisme // di lama blm ada tabel nya
- - order_alat_kimia // di lama kosong
- - order_simrs // di lama kosong
- - paket_antibiotik // sudah
- - paket_antibiotik_detail // udah
- - paket_lab // sudah
- - paket_lab_detail // sudah
- - paket_sumsum_tulang // sudah
- - paket_sumsum_tulang_detail // sudah
- 
- - pasien // sudah 
- 
- - petugas_lab // sudah
- - posisi_tray // sudah
- - printer // sudah
- - printer_detail // sudah
- - qc_histories // yang lama belum ada
- - qc_history // yang lama belum ada
- - qc_setup // yang lama belum ada
- - qc_setup_detail // yang lama belum ada
- - qc_transaksi // yang lama belum ada
- - qc_transaksi_detail // yang lama belum ada
- - report_hasil // yang lama belum ada
- - report_kritis // yang lama kosong
- - ruangan // sudah
- - saran  // yang lama belum ada
- - sessions // sudah
- - setting // sudah
- - specimen // sudah
- - spesimen_snomed // yang lama belum ada
- - status_asuransi // sudah
- - status_cito // sudah
- - status_kirim_simrs // di lama kosong
- - sub_kategori // dilama kosong
- - tat // sudah
- - temp_simrs // di lama belum ada
- - titel_sumsum_tulang // dilama kosong
- - transaksi_covid // dilama kosong
- - transaksi_kultur // dilama kosong
- - transaksi_kultur_darah // dilama kosong
- - transaksi_kultur_pus // dilama kosong
- - transaksi_kultur_sperma // dilama kosong
- 
- - transaksi_lab_antibiotik // lama kosong
- - transaksi_lab_deskripsi // lama kosong
- - transaksi_lab_detail // lama kosong
- - transaksi_lab_gdt // lama kosong
- - transaksi_lab_klinis // lama kosong
- - transaksi_lab_kultur // dilama kosong
- - transaksi_lab_mb // dilama kosong
- - transaksi_lab_mb_antibiotik // dilama kosong
- - transaksi_lab_mb_detail // dilama kosong
- - transaksi_lab_mb_mikroorganisme // dilama kosong
- - transaksi_lab_sumsum_tulang1 // dilama kosong
- - transaksi_lab_sumsum_tulang2 // dilama kosong
- - transaksi_lab_sumsum_tulang3 // dilama kosong
- 
- - transaksi_sampel // di lama belum ada
- - transaksi_stok // di lama belum ada
- - users // sudah + nambahin isi permission
- - waktu_pemeriksaan // sudah
- - waktu_sift // lama kosong
- - konten_catatan // udah
-
- - duplo // sudah
- - duplo_img // dilama tidak ada
- - duplo_mikrobiologi // dilama tidak ada
- - duplo_mikrobiologi_detail // dilama tidak ada 
- - duplo_ori // sudah
- - duplo_ori_detail
- - duplo_qc // dilama tidak ada
- - duplo_qc_detail // dilama tidak ada
- - failed_jobs // dilama kosong
- - grub // sudah + insert default autoloader = 0
- - grub_detail // sudah
- - kode_lab_hasil // sudah
- - kode_lab_panel // dilama belum ada
- - kode_lab_panel_detail // dilama belum ada
- - parameter_grub // dilama belum ada
- - password_resets // dilama kosong
- - personal_access_tokens // dilama kosong
-
-
- Yang belum
-
- 
- - duplo_detail
- - kategori_alat
- - kategori_alat_detail
- - kode_lab
- - kode_lab_detail
- - kritis
- - kritis_detail
- - transaksi_lab
- - transaksi_paket_lab
+### Kategori 4: Belum (Tabel yang Belum Disentuh Proses Migrasi)
+=====================================================================================
+duplo_detail					    BELUM DIMIGRASI
+duplo_ori_detail				    BELUM DIMIGRASI
+kategori_alat					    BELUM DIMIGRASI
+kategori_alat_detail			    BELUM DIMIGRASI
+kode_lab					        BELUM DIMIGRASI
+kode_lab_detail					    BELUM DIMIGRASI
+kritis						        BELUM DIMIGRASI
+kritis_detail					    BELUM DIMIGRASI
+transaksi_lab					    BELUM DIMIGRASI
+transaksi_paket_lab				    BELUM DIMIGRASI
 
 
 
+Mapping index Case Kode Lab 
 
+Name        Baru        Lama
+General     0           0    
+Sex         1           1
+age         2           2
+age & sex   3           3
+Sigle       4            
