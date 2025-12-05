@@ -47,6 +47,11 @@ duplo_ori					        sudah
 grub_detail					        sudah
 kode_lab_hasil				        sudah
 grub						        sudah + insert default autoloader = 0
+kode_lab					        sudah + ubah case = 4 yang single + insert max dari kode_his
+kode_lab_detail                     sudah + change index mapping rangen
+insert single ke kode_lab_detail    sudah
+kategori_alat					    sudah tapi grub_alat manual kan ?
+kategori_alat_detail			    sudah
 
 ### Kategori 2: Kosong (Sudah di Migrasi, tetapi data di Sistem Lama Kosong)
 =====================================================================================
@@ -132,10 +137,10 @@ saran						        lama belum ada tabelnya
 =====================================================================================
 duplo_detail					    BELUM DIMIGRASI
 duplo_ori_detail				    BELUM DIMIGRASI
-kategori_alat					    BELUM DIMIGRASI
+
 kategori_alat_detail			    BELUM DIMIGRASI
-kode_lab					        BELUM DIMIGRASI
-kode_lab_detail					    BELUM DIMIGRASI
+
+
 kritis						        BELUM DIMIGRASI
 kritis_detail					    BELUM DIMIGRASI
 transaksi_lab					    BELUM DIMIGRASI
