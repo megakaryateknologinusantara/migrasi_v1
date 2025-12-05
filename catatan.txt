@@ -151,3 +151,45 @@ Sex         1           1
 age         2           2
 age & sex   3           3
 Sigle       4            
+
+
+Terakhir kode_lab > ubah langsung status 4. 
+
+Mapping index Operator Logika Nilai Normal.
+
+Name        lama        baru
+≤ n ≤        0          0    
+< n <        1          
+≤ v <        2          
+< n ≤        3          
+> n          4          3
+<.n          5          4
+≥ n          6          1
+≤ n          7          2
+
+
+pada kodelab rangeumur ketika di SELECT DISTINCT rangeu FROM `kode_lab_detail`; hasilnya 0 aman.
+
+pada kodelab rangeumur ketika di SELECT DISTINCT rangen FROM `kode_lab_detail`; 0, 5, 4, 7.
+
+
+<select name="rangen418" id="rangen418" class="form-control input-sm select2 rule" data-id="418" style="width:90px;">
+                <option data-val="0" selected="" disabled="">≤ n ≤</option>
+                <option data-val="0"></option>
+                <option data-val="1">&lt; n &lt;</option>
+                <option data-val="2">≤ n &lt;</option>
+                <option data-val="3">&lt; n ≤</option>
+                <option data-val="4"> &gt;n </option>
+                <option data-val="5"> &lt;.n </option>
+                <option data-val="6"> ≥n </option>
+                <option data-val="7"> ≤n </option>
+            </select>
+
+<select name="rangen[]" id="rangen54" class="form-control select2 rule" data-id="54" style="width:90px;  ">
+                    <option value="0" selected="">≥ n ≤</option>
+                    <option value="0"> ≥ n ≤ </option>
+                    <option value="1"> ≥ n  </option>
+                    <option value="2"> ≤ n  </option>
+                    <option value="3"> &gt; n  </option>
+                    <option value="4"> &lt; n  </option>
+                </select>

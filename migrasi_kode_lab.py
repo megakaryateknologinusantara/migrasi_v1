@@ -4,6 +4,8 @@
 """
 Migrasi tabel: kode_lab (source → target)
 Struktur berbeda → mapping custom.
+Tambahan khusus:
+    - kolom lama kode_his → isi juga ke kolom MIN pada tabel target
 Support:
     - Batch MIGRATION (MIG_BATCH_SIZE via .env)
     - Progress bar
@@ -202,7 +204,7 @@ while True:
 
                 r = dict(row._mapping)
 
-                # === FIELD BARU ===
+                # === FIELD BARU DEFAULT ===
                 r["id_spesimen_snomed"] = None
                 r["en"] = None
                 r["kode_loinc"] = None
@@ -219,9 +221,13 @@ while True:
 
                 # === LOGIC nilai_rujukan menentukan CASE ===
                 if isinstance(r["nilai_rujukan"], str) and r["nilai_rujukan"].strip() == "-":
-                    r["case_value"] = r["case"]       # pakai case lama
+                    r["case_value"] = r["case"]   # pakai case lama
                 else:
-                    r["case_value"] = "4"             # wajib case=4
+                    r["case_value"] = "4"         # set case = 4
+
+                # === PERMINTAAN KHUSUS ===
+                # kode_his → juga masuk ke kolom MIN target
+                r["min"] = r["kode_his"] if r["kode_his"] else r["min"]
 
                 conn.execute(text(INSERT_SQL), r)
 
