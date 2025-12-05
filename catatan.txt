@@ -52,6 +52,7 @@ kode_lab_detail                     sudah + change index mapping rangen
 insert single ke kode_lab_detail    sudah
 kategori_alat					    sudah tapi grub_alat manual kan ?
 kategori_alat_detail			    sudah
+kritis						        sudah
 
 ### Kategori 2: Kosong (Sudah di Migrasi, tetapi data di Sistem Lama Kosong)
 =====================================================================================
@@ -195,3 +196,6 @@ pada kodelab rangeumur ketika di SELECT DISTINCT rangen FROM `kode_lab_detail`; 
                     <option value="3"> &gt; n  </option>
                     <option value="4"> &lt; n  </option>
                 </select>
+
+
+TERAKHIR DI KRITIS
