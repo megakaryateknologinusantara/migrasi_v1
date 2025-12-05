@@ -138,9 +138,6 @@ saran						        lama belum ada tabelnya
 duplo_detail					    BELUM DIMIGRASI
 duplo_ori_detail				    BELUM DIMIGRASI
 
-kategori_alat_detail			    BELUM DIMIGRASI
-
-
 kritis						        BELUM DIMIGRASI
 kritis_detail					    BELUM DIMIGRASI
 transaksi_lab					    BELUM DIMIGRASI
