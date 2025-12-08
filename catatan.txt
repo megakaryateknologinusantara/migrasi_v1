@@ -53,6 +53,9 @@ insert single ke kode_lab_detail    sudah
 kategori_alat					    sudah tapi grub_alat manual kan ?
 kategori_alat_detail			    sudah
 kritis						        sudah
+duplo_detail					    sudah
+duplo_ori_detail				    sudah
+kritis_detail					    sudah
 
 ### Kategori 2: Kosong (Sudah di Migrasi, tetapi data di Sistem Lama Kosong)
 =====================================================================================
@@ -136,11 +139,8 @@ saran						        lama belum ada tabelnya
 
 ### Kategori 4: Belum (Tabel yang Belum Disentuh Proses Migrasi)
 =====================================================================================
-duplo_detail					    BELUM DIMIGRASI
-duplo_ori_detail				    BELUM DIMIGRASI
 
-kritis						        BELUM DIMIGRASI
-kritis_detail					    BELUM DIMIGRASI
+
 transaksi_lab					    BELUM DIMIGRASI
 transaksi_paket_lab				    BELUM DIMIGRASI
 
@@ -198,4 +198,3 @@ pada kodelab rangeumur ketika di SELECT DISTINCT rangen FROM `kode_lab_detail`; 
                 </select>
 
 
-TERAKHIR DI KRITIS
