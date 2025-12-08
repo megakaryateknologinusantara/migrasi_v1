@@ -56,6 +56,8 @@ kritis						        sudah
 duplo_detail					    sudah
 duplo_ori_detail				    sudah
 kritis_detail					    sudah
+transaksi_paket_lab				    sudah
+transaksi_lab					    sudah
 
 ### Kategori 2: Kosong (Sudah di Migrasi, tetapi data di Sistem Lama Kosong)
 =====================================================================================
@@ -84,7 +86,6 @@ transaksi_kultur_pus				lama kosong
 transaksi_kultur_sperma				lama kosong
 transaksi_lab_antibiotik			lama kosong
 transaksi_lab_deskripsi				lama kosong
-transaksi_lab_detail				lama kosong
 transaksi_lab_gdt				    lama kosong
 transaksi_lab_klinis				lama kosong
 transaksi_lab_kultur				lama kosong
@@ -141,8 +142,7 @@ saran						        lama belum ada tabelnya
 =====================================================================================
 
 
-transaksi_lab					    BELUM DIMIGRASI
-transaksi_paket_lab				    BELUM DIMIGRASI
+transaksi_lab_detail				BELUM DIMIGRASI
 
 
 
@@ -197,4 +197,6 @@ pada kodelab rangeumur ketika di SELECT DISTINCT rangen FROM `kode_lab_detail`; 
                     <option value="4"> &lt; n  </option>
                 </select>
 
-
+CATATAN transaksi_lab
+❌ id_cara_masuk → NOT NULL ini ambil dari id_instalasi isinya 1 rajal 2 ranap
+❌ jenis_rawat → NOT NULL jika id_instalasi = 1 maka isi RJ jika 2 isi RANAP
