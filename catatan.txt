@@ -58,6 +58,7 @@ duplo_ori_detail				    sudah
 kritis_detail					    sudah
 transaksi_paket_lab				    sudah
 transaksi_lab					    sudah
+transaksi_lab_detail				sudah
 
 ### Kategori 2: Kosong (Sudah di Migrasi, tetapi data di Sistem Lama Kosong)
 =====================================================================================
@@ -142,7 +143,7 @@ saran						        lama belum ada tabelnya
 =====================================================================================
 
 
-transaksi_lab_detail				BELUM DIMIGRASI
+
 
 
 
