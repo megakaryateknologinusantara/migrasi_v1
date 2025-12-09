@@ -201,3 +201,14 @@ pada kodelab rangeumur ketika di SELECT DISTINCT rangen FROM `kode_lab_detail`; 
 CATATAN transaksi_lab
 ❌ id_cara_masuk → NOT NULL ini ambil dari id_instalasi isinya 1 rajal 2 ranap
 ❌ jenis_rawat → NOT NULL jika id_instalasi = 1 maka isi RJ jika 2 isi RANAP
+
+
+
+==================================================
+
+Konsep STEP
+
+1. Empty Tabel + Lepas FK
+2. MIGRASI Master2 saja.
+3. MIGRASI Transaksi saja.
+4. Pasang FK.

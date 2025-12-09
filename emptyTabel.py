@@ -54,7 +54,9 @@ protected_tables = {
     "jobs",
     "sessions",
     "cara_masuk",
-    "config"
+    "config",
+    "asal_rujukan",
+    "setting"
 }
 
 
