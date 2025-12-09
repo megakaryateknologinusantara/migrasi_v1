@@ -46,8 +46,8 @@ print(f"📌 Target Host : {target_config['host']}\n")
 
 # === [4] Tabel yang tidak boleh dihapus ===
 protected_tables = {
+    # "users",
     "migrations",
-    "users",
     "password_resets",
     "personal_access_tokens",
     "failed_jobs",
@@ -56,7 +56,6 @@ protected_tables = {
     "cara_masuk",
     "config",
     "asal_rujukan",
-    "setting"
 }
 
 
