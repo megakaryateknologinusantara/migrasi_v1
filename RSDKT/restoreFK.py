@@ -15,7 +15,13 @@ from datetime import datetime
 
 
 # === [1] KONFIGURASI FILE BACKUP (HARD-CODED) ===
-sql_backup_file = "backup_fk_db_slims_rsdkt_aio_20251203_095015.sql"
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Nama file backup (boleh kamu ganti sesuai file)
+backup_filename = "backup_fk_db_slims_rsdkt_aio_20251203_095015.sql"
+
+# Path lengkap → otomatis mengarah ke folder script
+sql_backup_file = os.path.join(BASE_DIR, backup_filename)
 # Ganti sesuai nama file backup kamu
 
 

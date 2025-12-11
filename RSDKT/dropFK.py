@@ -111,14 +111,17 @@ for _, row in grouped.iterrows():
 ts = datetime.now().strftime("%Y%m%d_%H%M%S")
 filename = f"backup_fk_{tgt_engine.url.database}_{ts}.sql"
 
-with open(filename, "w", encoding="utf-8") as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+filepath = os.path.join(BASE_DIR, filename)
+
+with open(filepath, "w", encoding="utf-8") as f:
     f.write(f"-- Backup FK dari database `{tgt_engine.url.database}`\n")
     f.write(f"-- Generated: {datetime.now().isoformat()}\n\n")
     f.write("-- RESTORE STATEMENTS:\n\n")
     for stmt in restore_statements:
         f.write(stmt + "\n\n")
 
-print(f"✅ File backup tersimpan: {filename}")
+print(f"✅ File backup tersimpan: {filepath}")
 
 
 # === [8] Drop FK dalam transaction ===
