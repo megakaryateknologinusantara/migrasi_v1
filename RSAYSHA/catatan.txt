@@ -1,0 +1,214 @@
+Yang harus dilakukan. 
+
+Empty Tabel semua kecuali
+
+cara masuk,
+migrasi
+tabel asal rujukan. 
+config
+uruan laraval jgn.
+file job dll.
+
+
+### Kategori 1: Sudah (Sudah di Migrasi, Data Penuh/Ada di Kedua Sistem)
+=====================================================================================
+antibiotik					        sudah
+bakteri						        sudah
+config						        sudah
+dokter						        sudah
+dokter_pj					        sudah
+history						        sudah
+instalasi					        sudah
+jenis_pemeriksaan			        sudah
+kategori_catatan			        sudah
+paket_antibiotik			        sudah
+paket_antibiotik_detail		        sudah
+paket_lab					        sudah
+paket_lab_detail			        sudah
+paket_sumsum_tulang			        sudah
+paket_sumsum_tulang_detail	        sudah
+pasien						        sudah
+petugas_lab					        sudah
+posisi_tray					        sudah
+printer						        sudah
+printer_detail				        sudah
+ruangan						        sudah
+sessions					        sudah
+setting						        sudah
+specimen					        sudah
+status_asuransi				        sudah
+status_cito					        sudah
+tat					    	        sudah
+users						        sudah + nambahin isi permission
+waktu_pemeriksaan			        sudah
+konten_catatan				        sudah
+duplo						        sudah
+duplo_ori					        sudah
+grub_detail					        sudah
+kode_lab_hasil				        sudah
+grub						        sudah + insert default autoloader = 0
+kode_lab					        sudah + ubah case = 4 yang single + insert max dari kode_his
+kode_lab_detail                     sudah + change index mapping rangen
+insert single ke kode_lab_detail    sudah
+kategori_alat					    sudah tapi grub_alat manual kan ?
+kategori_alat_detail			    sudah
+kritis						        sudah
+duplo_detail					    sudah
+duplo_ori_detail				    sudah
+kritis_detail					    sudah
+transaksi_paket_lab				    sudah
+transaksi_lab					    sudah
+transaksi_lab_detail				sudah
+
+### Kategori 2: Kosong (Sudah di Migrasi, tetapi data di Sistem Lama Kosong)
+=====================================================================================
+alias_kode_lab					    lama kosong
+harga_kultur					    lama kosong
+jobs						        lama kosong
+kategori					        lama kosong
+kelas_pasien					    lama kosong
+ket_klinis					        lama kosong
+member						        lama kosong
+migrations					        lama kosong
+order_alat_kimia				    lama kosong
+order_simrs					        lama kosong
+report_kritis					    lama kosong
+status_kirim_simrs				    lama kosong
+sub_kategori					    lama kosong
+kultur						        lama kosong
+lab_kultur_antibiotik		        lama kosong
+lab_kultur_bakteri				    lama kosong
+lampiran					        lama kosong
+titel_sumsum_tulang				    lama kosong
+transaksi_covid					    lama kosong
+transaksi_kultur				    lama kosong
+transaksi_kultur_darah				lama kosong
+transaksi_kultur_pus				lama kosong
+transaksi_kultur_sperma				lama kosong
+transaksi_lab_antibiotik			lama kosong
+transaksi_lab_deskripsi				lama kosong
+transaksi_lab_gdt				    lama kosong
+transaksi_lab_klinis				lama kosong
+transaksi_lab_kultur				lama kosong
+transaksi_lab_mb				    lama kosong
+transaksi_lab_mb_antibiotik			lama kosong
+transaksi_lab_mb_detail				lama kosong
+transaksi_lab_mb_mikroorganisme		lama kosong
+transaksi_lab_sumsum_tulang1		lama kosong
+transaksi_lab_sumsum_tulang2		lama kosong
+transaksi_lab_sumsum_tulang3		lama kosong
+waktu_sift					        lama kosong
+failed_jobs					        lama kosong
+password_resets					    lama kosong
+personal_access_tokens				lama kosong
+
+### Kategori 3: Tidak Ada (Tabel Baru, Tidak Ada di Sistem Lama)
+=====================================================================================
+bakteri_detail					    lama belum ada tabelnya
+barang_keluar					    lama belum ada tabelnya
+barang_keluar_detail			    lama belum ada tabelnya
+barang_masuk					    lama belum ada tabelnya
+barangs						        lama belum ada tabelnya
+cara_masuk					        lama belum ada tabelnya
+cekin_sample					    lama belum ada tabelnya
+kesan						        lama belum ada tabelnya
+kirim_simrs					        lama belum ada tabelnya
+media_pemeriksaan				    lama belum ada tabelnya
+mikroorganisme					    lama belum ada tabelnya
+asal_rujukan					    lama belum ada tabelnya
+spesimen_snomed					    lama belum ada tabelnya
+analis						        lama belum ada tabelnya
+parameter_grub					    lama belum ada tabelnya
+kode_lab_panel					    lama belum ada tabelnya
+duplo_qc					        lama belum ada tabelnya
+duplo_qc_detail				        lama belum ada tabelnya
+duplo_img					        lama belum ada tabelnya
+duplo_mikrobiologi			        lama belum ada tabelnya
+duplo_mikrobiologi_detail	        lama belum ada tabelnya
+kode_lab_panel_detail			    lama belum ada tabelnya
+transaksi_sampel				    lama belum ada tabelnya
+transaksi_stok					    lama belum ada tabelnya
+temp_simrs					        lama belum ada tabelnya
+qc_histories					    lama belum ada tabelnya
+qc_history					        lama belum ada tabelnya
+qc_setup					        lama belum ada tabelnya
+qc_setup_detail					    lama belum ada tabelnya
+qc_transaksi					    lama belum ada tabelnya
+qc_transaksi_detail				    lama belum ada tabelnya
+report_hasil					    lama belum ada tabelnya
+kalkulasi					        lama belum ada tabelnya
+saran						        lama belum ada tabelnya
+
+### Kategori 4: Belum (Tabel yang Belum Disentuh Proses Migrasi)
+=====================================================================================
+
+
+
+
+
+
+Mapping index Case Kode Lab 
+
+Name        Baru        Lama
+General     0           0    
+Sex         1           1
+age         2           2
+age & sex   3           3
+Sigle       4            
+
+
+Terakhir kode_lab > ubah langsung status 4. 
+
+Mapping index Operator Logika Nilai Normal.
+
+Name        lama        baru
+≤ n ≤        0          0    
+< n <        1          
+≤ v <        2          
+< n ≤        3          
+> n          4          3
+<.n          5          4
+≥ n          6          1
+≤ n          7          2
+
+
+pada kodelab rangeumur ketika di SELECT DISTINCT rangeu FROM `kode_lab_detail`; hasilnya 0 aman.
+
+pada kodelab rangeumur ketika di SELECT DISTINCT rangen FROM `kode_lab_detail`; 0, 5, 4, 7.
+
+
+<select name="rangen418" id="rangen418" class="form-control input-sm select2 rule" data-id="418" style="width:90px;">
+                <option data-val="0" selected="" disabled="">≤ n ≤</option>
+                <option data-val="0"></option>
+                <option data-val="1">&lt; n &lt;</option>
+                <option data-val="2">≤ n &lt;</option>
+                <option data-val="3">&lt; n ≤</option>
+                <option data-val="4"> &gt;n </option>
+                <option data-val="5"> &lt;.n </option>
+                <option data-val="6"> ≥n </option>
+                <option data-val="7"> ≤n </option>
+            </select>
+
+<select name="rangen[]" id="rangen54" class="form-control select2 rule" data-id="54" style="width:90px;  ">
+                    <option value="0" selected="">≥ n ≤</option>
+                    <option value="0"> ≥ n ≤ </option>
+                    <option value="1"> ≥ n  </option>
+                    <option value="2"> ≤ n  </option>
+                    <option value="3"> &gt; n  </option>
+                    <option value="4"> &lt; n  </option>
+                </select>
+
+CATATAN transaksi_lab
+❌ id_cara_masuk → NOT NULL ini ambil dari id_instalasi isinya 1 rajal 2 ranap
+❌ jenis_rawat → NOT NULL jika id_instalasi = 1 maka isi RJ jika 2 isi RANAP
+
+
+
+==================================================
+
+Konsep STEP
+
+1. Empty Tabel + Lepas FK
+2. MIGRASI Master2 saja.
+3. MIGRASI Transaksi saja.
+4. Pasang FK.
